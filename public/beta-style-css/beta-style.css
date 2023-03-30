@@ -1,0 +1,136 @@
+.page-header {
+    background-image: url("../images/header-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+    font-size: 14px;
+    width: 500px;
+    margin-left: 20%;
+}
+@media (max-width: 768px){
+    .page-header{
+        min-height: 40vh;
+    }
+    .content-p{
+        width: 540px;
+    }
+    .content{
+    margin: 0 auto;
+    }
+    .cards-side{
+        flex-wrap: wrap;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .pagrindinis{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media (max-width: 576px){
+    .page-header{
+        min-height: 30vh;
+    }   
+    .content-p {
+        width: 500px;
+        font-size:14px;
+    }
+    .content{
+    margin: 0 auto;
+    }
+}
+.card .img-fit{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+@media (max-width: 768){
+    .img-fit{
+        aspect-ratio: 1.45/ 1;
+    }
+}
+.pasiulymai-naujienos, .pasiulymai-top{
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 1px 4px;
+}
+.pasiulymai-naujienos{
+    border: 2px solid rgb(168, 7, 82);
+    color: rgb(168, 7, 82);
+    margin-bottom: 5px;
+}
+.pasiulymai-top{
+    border: 2px solid rgb(105, 143, 0);
+    color: rgb(105, 143, 0);
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.pasiulymai-aprasymas{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgb(55, 58, 60);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.pasiulymai-viesbutis{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10;
+}
+.pasiulymai-miestas{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.pasiulymas-miestas-grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20px 1fr; 
+}
+i{
+    color: rgb(168, 7, 82);
+    font-size: 20px;
+}
+.card{
+    margin-bottom: 2rem;
+}
+.info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    margin-top: 0;
+}
+.info-left-p{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.info-left-p-kaina{
+    font-size: 34px;
+    color: rgb(168, 7, 82);
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.info-left-p-pradine-kaina{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info-right-asmenys, .info-right-naktys, .info-right-galiojimas{
+    font-size: 13px;
+    font-weight: 700;
+}
